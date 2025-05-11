@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz App </title>
+  <link rel="stylesheet" href="Quiz.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Frontend Quiz</h1>
+    
+    <!-- Intro Screen -->
+    <div id="intro-box">
+      <p>Welcome to the Frontend Quiz! Test your knowledge with 10 interesting questions. You'll have 15 seconds to answer each question.</p>
+      <p>Are you ready to begin?</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+    
+    <!-- Quiz Screen -->
+    <div id="quiz-box" class="hidden">
+      <div id="question-number">Question 1 of 10</div>
+      
+      <div id="timer-container">
+        Time left: <span id="timer">20</span>s
+      </div>
+      
+      <div class="progress-container">
+        <div id="progress-fill"></div>
+      </div>
+      
+      <h2 id="question">Loading...</h2>
+      <ul id="answers"></ul>
+      
+      <div id="explanation" class="hidden"></div>
+      <div id="feedback"></div>
+      
+      <button id="next-btn">Next Question</button>
+    </div>
+    
+    <!-- Results Screen -->
+    <div id="score-container" class="hidden">
+      <h2>Quiz Complete!</h2>
+      <h3>Your Score: <span id="score"></span></h3>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+  
+  <script src="Quiz.js"></script>
+</body>
+</html>

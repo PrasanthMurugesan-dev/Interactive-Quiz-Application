@@ -1,0 +1,309 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #04153d 0%, #182848 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  #question {
+    font-size: 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 12px 0;
+  }
+  
+  .answer-btn {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+  }
+  
+  .answer-btn:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+  }
+  
+  .answer-btn:disabled {
+    cursor: default;
+    opacity: 0.8;
+    transform: none;
+  }
+  
+  #next-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  #next-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    min-height: 30px;
+    font-size: 18px;
+  }
+  
+  .feedback-correct {
+    color: #2ecc71;
+    animation: popIn 0.5s ease;
+  }
+  
+  .feedback-wrong {
+    color: #e74c3c;
+    animation: shake 0.5s ease;
+  }
+  
+  .feedback-timeout {
+    color: #f39c12;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  #explanation {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #3498db;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #score-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2070c0;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow: hidden;
+  }
+  
+  #progress-fill {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+  
+  #timer-container {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  #timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    transition: color 0.3s ease;
+  }
+  
+  .timer-warning {
+    color: #e74c3c !important;
+    animation: pulse 1s infinite;
+  }
+  
+  #question-number {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .correct-answer {
+    background-color: rgba(46, 204, 113, 0.2) !important;
+    border-color: #2ecc71 !important;
+  }
+  
+  .wrong-answer {
+    background-color: rgba(231, 76, 60, 0.2) !important;
+    border-color: #e74c3c !important;
+  }
+  
+  /* Intro Box */
+  #intro-box {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  #intro-box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  #start-btn {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  #start-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .slide-out {
+    animation: slideOut 0.5s ease forwards;
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  @keyframes slideOut {
+    to { transform: translateX(-100%); opacity: 0; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease forwards;
+  }
+  
+  .pulse {
+    animation: buttonPulse 1s infinite;
+  }
+  
+  @keyframes buttonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Confetti Animation */
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12;
+    animation: confettiFall 5s linear forwards;
+    z-index: 9999;
+  }
+  
+  @keyframes confettiFall {
+    0% {
+      transform: translateY(-100vh) rotate(0deg);
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
