@@ -19,7 +19,8 @@ output:
 
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/1420a8cba88625dbd6be443ac1000456de86a9a7/img1.png)   
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/fad2a16e77db34d2241a576ca4fe2a1ef51e86f6/img2.png)
-
+![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/95ab4ac1c898a4f4387d644f207cfd081c8d7e01/img3.png)
 
 https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/1420a8cba88625dbd6be443ac1000456de86a9a7/img1.png
 https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/fad2a16e77db34d2241a576ca4fe2a1ef51e86f6/img2.png
+https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/95ab4ac1c898a4f4387d644f207cfd081c8d7e01/img3.png
