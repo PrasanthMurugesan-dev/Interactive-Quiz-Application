@@ -16,10 +16,13 @@ DESCRIPTION:The Interactive Quiz Application is a web-based platform designed to
 
 
 output:
-
+                                                              Step-1
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/1420a8cba88625dbd6be443ac1000456de86a9a7/img1.png)   
+                                                              Step-2
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/fad2a16e77db34d2241a576ca4fe2a1ef51e86f6/img2.png)
+                                                              Step-3
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/95ab4ac1c898a4f4387d644f207cfd081c8d7e01/img3.png)
+                                                              Step-4
 ![Image Alt](https://github.com/PrasanthMurugesan-dev/Interactive-Quiz-Application/blob/0891774e58f1f53d8f22a62cc854e8e251c6e4ce/img4.png)
 
 
